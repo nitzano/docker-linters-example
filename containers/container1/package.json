@@ -2,5 +2,8 @@
   "name": "container1",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.4.0"
+  }
 }
