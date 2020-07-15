@@ -1,10 +1,13 @@
-version: '3.4'
+version: "3.4"
 
 services:
-  docker-linters-example:
-    image: docker-linters-example
-    build: .
-    environment:
-      NODE_ENV: production
-    ports:
-      - 3000
+  container1:
+    image: container1
+    container_name: container1
+    build: containers/container1
+    tty: yes
+    command: /bin/sh
+    volumes:
+      - ./containers/container1/yarn.lock:/app/yarn.lock:delegated
+      - ./containers/container1/package.json:/app/package.json
+      - ./containers/container1/src:/app/src
