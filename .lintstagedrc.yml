@@ -1,3 +1,4 @@
 ./containers/container1/src/*.js:
   - echo
   - sed 's|containers|test|g'
+  - echo
