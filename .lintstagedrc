@@ -1,0 +1,3 @@
+{
+  "containers/container1/src/*.js": "docker run container1 yarn lint"
+}
