@@ -1,2 +1,2 @@
-containers/container1/*.js:
+./containers/container1/src/*.js:
   - echo
