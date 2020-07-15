@@ -1,0 +1,2 @@
+containers/container1/*.js:
+  - echo
