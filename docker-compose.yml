@@ -11,3 +11,11 @@ services:
       - ./containers/container1/yarn.lock:/app/yarn.lock:delegated
       - ./containers/container1/package.json:/app/package.json
       - ./containers/container1/src:/app/src
+  container2:
+    image: container2
+    container_name: container2
+    build: containers/container2
+    tty: yes
+    command: /bin/sh
+    volumes:
+      - ./containers/container2/src:/app/src
