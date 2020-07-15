@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  docker-linters-example:
+    image: docker-linters-example
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000
