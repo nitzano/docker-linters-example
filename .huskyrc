@@ -1,5 +1,5 @@
 {
   "hooks": {
-    "pre-commit": "lint-staged -r"
+    "pre-commit": "lint-staged -r --verbose"
   }
 }
