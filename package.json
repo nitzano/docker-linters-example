@@ -6,6 +6,6 @@
   "author": "Nitzan Ohana",
   "license": "MIT",
   "scripts": {
-    "install-husky-hooks": "npm install --no-save husky lint-staged"
+    "install-hooks-husky": "npm install --no-save husky lint-staged"
   }
 }
