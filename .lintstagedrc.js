@@ -10,9 +10,10 @@ module.exports = {
   },
   "containers/container2/src/**/*.py": (absolutePaths) => {
     const cwd = process.cwd();
-    const relativePaths = absolutePaths.map((file) =>
-      path.relative(cwd, file).replace("containers/container2/", "").join(" ")
-    );
+    console.log(absolutePaths);
+    // const relativePaths = absolutePaths.map((file) =>
+    //   path.relative(cwd, file).replace("containers/container2/", "").join(" ")
+    // );
     return `echo ${absolutePaths}`;
     // return `docker run --rm -v ${cwd}/containers/container2/src:/app/src container2 sh -c \"pylint ${relativePaths}\"`;
   },
