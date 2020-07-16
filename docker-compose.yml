@@ -10,6 +10,7 @@ services:
     volumes:
       - ./containers/container1/yarn.lock:/app/yarn.lock:delegated
       - ./containers/container1/package.json:/app/package.json
+      - ./containers/container1/.eslintrc.js:/app/.eslintrc.js
       - ./containers/container1/src:/app/src
   container2:
     image: container2
