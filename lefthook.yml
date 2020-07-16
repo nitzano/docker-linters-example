@@ -1,0 +1,7 @@
+pre-commit:
+    parallel: true
+    commands:
+        lint_container1:
+            root: "containers/container1/"
+            glob: "*.js"
+            run: docker run --rm -w /app --volume ${PWD}/src:/app/src container1 sh -c "yarn lint --fix {staged_files}" && git add
