@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
   'containers/container1/**/*.js': (absolutePaths) => {
     const cwd = process.cwd()
-    const relativePaths = absolutePaths.map((file) => path.relative(cwd, file).replace('containers/container1', ''))
+    const relativePaths = absolutePaths.map((file) => path.relative(cwd, file).replace('containers', 'fff'))
     return `echo ${relativePaths.join(' ')}`
   }
 }
