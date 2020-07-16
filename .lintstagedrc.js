@@ -4,6 +4,6 @@ module.exports = {
   'containers/container1/src/**/*.js': (absolutePaths) => {
     const cwd = process.cwd()
     const relativePaths = absolutePaths.map((file) => path.relative(cwd, file).slice(22))
-    return `docker run --rm -v ${cwd}/containers/container1/src:/app/src container1 yarn lint --fix ${relativePaths.join(' ')}`
+    return `docker run --rm -v ${cwd}/containers/container1/src:/app/src container1 sh -c \"yarn lint --fix ${relativePaths.join(' ')}\"`
   }
 }
