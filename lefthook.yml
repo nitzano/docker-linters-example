@@ -7,5 +7,5 @@ pre-commit:
             run: docker run --rm -v ${PWD}/src:/app/src container1 sh -c "yarn lint --fix {staged_files}" && git add {staged_files}
         lint_container2:
             root: "containers/container2/"
-            glob: "*.js"
+            glob: "*.py"
             run: docker run --rm -v ${PWD}/src:/app/src container2 sh -c "pylint {staged_files}" && git add {staged_files}
