@@ -6,7 +6,7 @@
   "author": "Nitzan Ohana",
   "license": "MIT",
   "scripts": {
-    "install-hooks-lefthook": "npm install --no-save @arkweid/lefthook",
-    "install-hooks-husky": "npm install --no-save husky lint-staged"
+    "install-lefthook": "npm install --no-save @arkweid/lefthook",
+    "install-husky": "npm install --no-save husky lint-staged"
   }
 }
